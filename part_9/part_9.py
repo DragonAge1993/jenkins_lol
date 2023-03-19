@@ -16,8 +16,9 @@
 # 2 + 2 = 4
 # 2 + 2 = 4
 # 2 + 2 = 4
-i = 0
-a = input("")
-while i < 3:
-    print(a)
-    i += i + 1
+
+d = 0
+i = input("")
+while d < 3:
+    print(i)
+    d += 1
