@@ -13,7 +13,7 @@ i = int(input())
 y = int(input())
 if i < 1000 and y < 1000:
     if i > y:
-        c = i - y
+        c = i + y
         vyvod = int(c)
         print(vyvod)
     if y > i:
@@ -22,4 +22,3 @@ if i < 1000 and y < 1000:
         print(vyvod1)
 else:
     print("Вы ввели значение не удовлетворяющие условию!")
-
