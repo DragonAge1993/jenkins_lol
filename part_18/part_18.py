@@ -8,17 +8,32 @@
 # Формат вывода
 # Одно число — результат сложения введённых чисел без учёта переносов.
 
+# Находим длину строки в Python с помощью функции len()
+# str = 'otus'
+# print(len(str)) 
 
-i = int(input())
-y = int(input())
-if i < 1000 and y < 1000:
-    if i > y:
-        c = i + y
-        vyvod = int(c)
-        print(vyvod)
-    if y > i:
-        c = y - i
-        vyvod1 = int(c)
-        print(vyvod1)
-else:
-    print("Вы ввели значение не удовлетворяющие условию!")
+# n1 = int(input())
+# n2 = int(input())
+# p = 1
+# n3 = 0
+# for _ in range(3):
+#     n3 += (n1 + n2)%10*p
+#     p *= 10
+#     n1 //= 10
+#     n2 //= 10
+# print(n3)
+ 
+# # поразрядно (строки)
+# *n1, = map(int, input().zfill(3))
+# *n2, = map(int, input().zfill(3))
+# for i in range(len(n1)):
+#     n2[-i-1] = (n1[-i-1] + n2[-i-1])%10
+# print(int(''.join(map(str, n2))))
+
+
+# public static int add(int a, int b)  {
+#   if (b == 0) return a;
+#   int sum = a ^ b;      // добавляем без переноса
+#   int carry = (a & b) << 1;  // перенос без суммирования
+#   return add(sum, carry);    // рекурсия
+# }
