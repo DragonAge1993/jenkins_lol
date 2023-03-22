@@ -33,7 +33,7 @@
 
 n = int(input())
 y = int(input())
-if n >=1 and y >=1:
+if n > 0 and y > 0:
     c = (n * y) / 2
     otvet = int(c)
     print(otvet)
