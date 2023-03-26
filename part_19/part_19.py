@@ -166,14 +166,24 @@ chas = m // 60
 # print(chas)
 lokek = int(chas)
 minut = m % 60
+chas_v_sutkax = 24 * 60
+chas_v_sutkax_int = int(chas_v_sutkax)
 lolkek2 = int(minut)
 if lokek < 24:
     chas = m // 60
     print(lokek)
-else:
+# else:
+#     print("0")
+if lokek == 24:
     print("0")
-if lokek > 24:
-    chas2 = (m // 60) - 24
+if m > chas_v_sutkax:
+    chas2 = (m - chas_v_sutkax_int) / 60
     chas3 = int(chas2)
     print(chas3)
+# if lokek > 48:
+#     chas2 = (m // 60) - 48
+#     chas3 = int(chas2)
+#     print(chas3)
+# else:
+#     print("0")
 print(lolkek2)
