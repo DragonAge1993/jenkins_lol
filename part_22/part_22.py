@@ -10,9 +10,4 @@ class_one = int(input())
 class_two = int(input())
 class_three = int(input())
 
-c = (class_one + class_two + class_three) / 2
-c_int = int(c)
-# print(c_int)
-rezult = math.ceil(c)
-# print(c)
-print(rezult)
+print(class_one // 2 + class_two // 2 + class_three // 2 + class_one % 2 + class_two % 2 + class_three % 2)
