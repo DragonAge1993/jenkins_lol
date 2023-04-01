@@ -9,7 +9,6 @@ a = []
 a.append(i)
 a.append(y)
 a.append(z)
-# print(a)
 min_list = min(a)
 print(min_list)
 
